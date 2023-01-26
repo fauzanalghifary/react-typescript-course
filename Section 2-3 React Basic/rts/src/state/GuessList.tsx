@@ -6,7 +6,7 @@ const GuestList: React.FC = () => {
 
   const onClick = () => {
     setName("");
-    // setGuests([...guests, name]);
+    // setGuests([...guests, name]); // not a preferred way to update state
     setGuests((prevGuests) => [...prevGuests, name]);
   };
   return (
